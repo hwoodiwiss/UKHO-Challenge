@@ -9,6 +9,6 @@ namespace UKHO_Challenge.ResultsProcessors
 {
     public interface IResultsProcessor
     {
-        public IDictionary<string, CountyResult> ProcessResults(IDictionary<string, CountyResult> currResults);
+        public IDictionary<string, CountyResult> ProcessResults(IDictionary<string, CountyResult> currResults, List<string> accumulatedErrors);
     }
 }
